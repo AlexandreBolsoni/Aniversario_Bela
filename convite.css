@@ -100,7 +100,6 @@
     transform: translateY(-75%);
     transition-delay: 2.5s;
   }
-  /* Adicione este bloco de regra de mídia no final do seu CSS existente */
 /* Responsividade para dispositivos móveis gerais (max-width: 768px) */
 @media (max-width: 768px) {
     .wrapper {
@@ -123,17 +122,46 @@
   
   /* Responsividade para dispositivos Android */
   @media (max-width: 600px) {
-    /* Faça ajustes específicos para Android, se necessário */
+    .wrapper {
+      height: 30vh;
+      width: 90%;
+    }
+  
+    .envelope {
+      border-top: 8%;
+      border-right: 12%;
+      border-bottom: 8%;
+      border-left: 12%;
+    }
+  
+    .letter .imgConvite {
+      font-size: 4.5vw;
+      margin-top: 4.5vh;
+    }
   }
   
   /* Responsividade para dispositivos iPhone */
   @media only screen and (max-device-width: 480px) {
-    /* Faça ajustes específicos para iPhone, se necessário */
+    .wrapper {
+      height: 25vh;
+      width: 90%;
+    }
+  
+    .envelope {
+      border-top: 6%;
+      border-right: 10%;
+      border-bottom: 6%;
+      border-left: 10%;
+    }
+  
+    .letter .imgConvite {
+      font-size: 5vw;
+      margin-top: 5vh;
+    }
   }
   
   /* Outros dispositivos móveis, se necessário */
   @media (max-width: 480px) {
     /* Faça ajustes específicos para outros dispositivos móveis, se necessário */
   }
-  
   
