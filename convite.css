@@ -101,6 +101,7 @@
     transition-delay: 2.5s;
   }
   /* Adicione este bloco de regra de mídia no final do seu CSS existente */
+/* Responsividade para dispositivos móveis gerais (max-width: 768px) */
 @media (max-width: 768px) {
     .wrapper {
       height: 40vh;
@@ -119,4 +120,20 @@
       margin-top: 4vh;
     }
   }
+  
+  /* Responsividade para dispositivos Android */
+  @media (max-width: 600px) {
+    /* Faça ajustes específicos para Android, se necessário */
+  }
+  
+  /* Responsividade para dispositivos iPhone */
+  @media only screen and (max-device-width: 480px) {
+    /* Faça ajustes específicos para iPhone, se necessário */
+  }
+  
+  /* Outros dispositivos móveis, se necessário */
+  @media (max-width: 480px) {
+    /* Faça ajustes específicos para outros dispositivos móveis, se necessário */
+  }
+  
   
