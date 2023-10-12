@@ -192,3 +192,58 @@ body {
 .wrapper .letter {
   transition: transform 1s ease, transition-delay 0.5s ease;
 }
+/* Estilos para telas menores que 400px */
+@media (max-width: 400px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .wrapper {
+    margin-top: 2%;
+    height: auto;
+    width: 80%;
+  }
+
+  .lid.one,
+  .lid.two {
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 50px solid transparent;
+  }
+
+  .envelope {
+    border-right: 75px solid #ffc6de;
+    border-bottom: 75px solid #e7b3c9;
+    border-left: 75px solid #ffc6de;
+  }
+}
+
+/* Estilos comuns para todas as telas */
+/* Coloque as regras de estilo comuns aqui */
+.clique-aqui {
+  background-color: #e7b3c9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+}
+
+.clique-aqui:hover {
+  background-color: #d397be;
+}
+
+.lid.one {
+  transition-delay: 0.75s;
+}
+
+.lid.two {
+  transition-delay: 0.5s;
+}
+
+.wrapper .lid.one,
+.wrapper .lid.two,
+.wrapper .letter {
+  transition: transform 1s ease, transition-delay 0.5s ease;
+}
