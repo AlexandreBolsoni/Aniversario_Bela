@@ -24,7 +24,17 @@ body {
   justify-content: center;
   z-index: 0;
 }
+.imagem_disney {
+  text-align: center; /* Centralizar o texto e imagem */
+  margin-top: 20px; /* Adicionar margem superior para separação */
+}
 
+.imagem_disney img {
+  max-width: 100%; /* Garantir que a imagem não ultrapasse seu contêiner */
+  height: auto; /* Manter a proporção da imagem */
+  border: 1px solid #e7b3c9; /* Adicionar uma borda à imagem */
+  border-radius: 10px; /* Arredondar as bordas da imagem */
+}
 .lid {
   position: absolute;
   height: 100%;
@@ -48,13 +58,13 @@ body {
 
 /* Adicione essas regras de estilo para a classe "clique-aqui" */
 .clique-aqui {
-  background-color: #e7b3c9;
+  background-color: #000000;
   /* Cor de fundo */
   color: white;
   /* Cor do texto */
   padding: 10px 20px;
   /* Espaçamento interno (ajuste conforme necessário) */
-  border-radius: 5px;
+  border-radius: 55px;
   /* Borda arredondada */
   cursor: pointer;
   /* Ícone de cursor de clique */
@@ -169,9 +179,26 @@ body {
 /* Estilos para telas pequenas (por exemplo, dispositivos móveis) */
 @media (max-width: 600px) {
   body {
+    margin-top: 60%;
     align-items: flex-start;
   }
+  .imagem_disney {
+    text-align: center; /* Centralizar o texto e imagem */
+    margin: auto;
+  }
+  p .clique-aqui {
+    width: 100%;
+    text-align: center;
+    background-color: #e7b3c9;
+    color: white;
+    border-radius: 5px;
 
+  }
+  .imagem_disney img {
+  
+    height: auto; /* Manter a proporção da imagem */
+    margin: auto;
+  }
   .wrapper {
     margin-top: 2%;
     height: auto;
@@ -180,20 +207,21 @@ body {
 
   .lid.one,
   .lid.two {
-    border-right: 100px solid transparent;
-    border-bottom: 200px solid transparent;
-    border-left: 100px solid transparent;
+    border-right: 170px solid transparent;
+    border-bottom: 230px solid transparent;
+    border-left: 170px solid transparent;
   }
 
   .envelope {
-    border-right: 150px solid #ffc6de;
-    border-bottom: 150px solid #e7b3c9;
-    border-left: 150px solid #ffc6de;
+    border-right: 170px solid #ffc6de;
+    border-bottom: 250px solid #e7b3c9;
+    border-left: 170px solid #ffc6de;
   }
 }
 /* Estilos para telas menores que 500px (nova regra para 500px) */
 @media (max-width: 500px) {
   body {
+    margin-top: 25%;
     align-items: flex-start;
   }
 
@@ -215,9 +243,9 @@ body {
 
   .envelope {
     border-top: 170px solid transparent; /* Reduza as dimensões do envelope */
-    border-right: 190px solid #ffc6de; /* Reduza as dimensões do envelope */
+    border-right: 130px solid #ffc6de; /* Reduza as dimensões do envelope */
     border-bottom: 190px solid #e7b3c9; /* Reduza as dimensões do envelope */
-    border-left: 190px solid #ffc6de; /* Reduza as dimensões do envelope */
+    border-left: 130px solid #ffc6de; /* Reduza as dimensões do envelope */
   }
 }
 /* Estilos para telas menores que 400px */
