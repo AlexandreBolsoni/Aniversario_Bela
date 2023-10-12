@@ -199,22 +199,23 @@ body {
   }
 
   .wrapper {
-    margin-top: 2%;
+   margin: auto;
     height: auto;
     width: 80%;
   }
 
   .lid.one,
   .lid.two {
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 40px solid transparent;
     border-left: 50px solid transparent;
   }
 
   .envelope {
-    border-right: 75px solid #ffc6de;
-    border-bottom: 75px solid #e7b3c9;
-    border-left: 75px solid #ffc6de;
+    border-top: 120px solid transparent ;
+    border-right: 125px solid #ffc6de;
+    border-bottom: 125px solid #e7b3c9;
+    border-left: 105px solid #ffc6de;
   }
 }
 
