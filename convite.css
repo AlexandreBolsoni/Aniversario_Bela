@@ -108,32 +108,6 @@ body {
   transition: transform 1s ease, transition-delay 0.5s ease;
 }
 
-/* Estilos para telas pequenas (por exemplo, dispositivos móveis) */
-@media (max-width: 600px) {
-  body {
-    align-items: flex-start;
-  }
-
-  .wrapper {
-    margin-top: 2%;
-    height: auto;
-    width: 80%;
-  }
-
-  .lid.one,
-  .lid.two {
-    border-right: 100px solid transparent;
-    border-bottom: 200px solid transparent;
-    border-left: 100px solid transparent;
-  }
-
-  .envelope {
-    border-right: 150px solid #ffc6de;
-    border-bottom: 150px solid #e7b3c9;
-    border-left: 150px solid #ffc6de;
-  }
-}
-
 /* Estilos para telas médias (por exemplo, tablets) */
 @media (max-width: 1024px) {
   body {
@@ -192,6 +166,60 @@ body {
 .wrapper .letter {
   transition: transform 1s ease, transition-delay 0.5s ease;
 }
+/* Estilos para telas pequenas (por exemplo, dispositivos móveis) */
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .wrapper {
+    margin-top: 2%;
+    height: auto;
+    width: 80%;
+  }
+
+  .lid.one,
+  .lid.two {
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid transparent;
+    border-left: 100px solid transparent;
+  }
+
+  .envelope {
+    border-right: 150px solid #ffc6de;
+    border-bottom: 150px solid #e7b3c9;
+    border-left: 150px solid #ffc6de;
+  }
+}
+/* Estilos para telas menores que 500px (nova regra para 500px) */
+@media (max-width: 500px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .wrapper {
+    margin: auto;
+    height: auto;
+    width: 90%; /* Aumente a largura para 90% para acomodar telas mais estreitas */
+  }
+  .clique-aqui{
+    text-align: center;
+  }
+
+  .lid.one,
+  .lid.two {
+    border-right: 60px solid transparent; /* Reduza as dimensões da tampa */
+    border-bottom: 140px solid transparent; /* Reduza as dimensões da tampa */
+    border-left: 60px solid transparent; /* Reduza as dimensões da tampa */
+  }
+
+  .envelope {
+    border-top: 170px solid transparent; /* Reduza as dimensões do envelope */
+    border-right: 190px solid #ffc6de; /* Reduza as dimensões do envelope */
+    border-bottom: 190px solid #e7b3c9; /* Reduza as dimensões do envelope */
+    border-left: 190px solid #ffc6de; /* Reduza as dimensões do envelope */
+  }
+}
 /* Estilos para telas menores que 400px */
 @media (max-width: 400px) {
   body {
@@ -206,6 +234,7 @@ body {
 
   .lid.one,
   .lid.two {
+    
     border-right: 70px solid transparent;
     border-bottom: 40px solid transparent;
     border-left: 50px solid transparent;
@@ -247,4 +276,31 @@ body {
 .wrapper .lid.two,
 .wrapper .letter {
   transition: transform 1s ease, transition-delay 0.5s ease;
+}
+/* Estilos para telas menores que 300px */
+@media (max-width: 300px) {
+  .clique-aqui{
+    font-size: 12px;
+  }
+
+
+  .wrapper {
+    margin: auto;
+    height: auto;
+    width: 90%; /* Aumente a largura para 90% para acomodar telas mais estreitas */
+  }
+
+  .lid.one,
+  .lid.two {
+    border-right: 40px solid transparent; /* Reduza as dimensões da tampa */
+    border-bottom: 120px solid transparent; /* Reduza as dimensões da tampa */
+    border-left: 40px solid transparent; /* Reduza as dimensões da tampa */
+  }
+
+  .envelope {
+    border-top: 90px solid transparent; /* Reduza as dimensões do envelope */
+    border-right: 80px solid #ffc6de; /* Reduza as dimensões do envelope */
+    border-bottom: 100px solid #e7b3c9; /* Reduza as dimensões do envelope */
+    border-left: 80px solid #ffc6de; /* Reduza as dimensões do envelope */
+  }
 }
