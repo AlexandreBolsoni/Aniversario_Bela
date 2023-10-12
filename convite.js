@@ -8,7 +8,7 @@ function realizarTransformacoes() {
     lidOne.style.transform = 'rotateX(90deg)';
     lidOne.style.transitionDelay = '0.75s';
 
-    lidTwo.style.transform = 'rotateX(180deg)';
+    lidTwo.style.transform = 'rotateX(90deg)';
     lidTwo.style.transitionDelay = '1.25s';
 
     letter.style.transform = 'translateY(-75%)';

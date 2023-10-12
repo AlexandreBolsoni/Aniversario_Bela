@@ -1,176 +1,175 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 200vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    background-color: #3B4049;
-  }
-  
-  .wrapper {
-    height: 700px;
-    width: 900px;
-    background-color: #3760C9;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    z-index: 0;
-  }
-  
-  .lid {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-right: 450px solid transparent;
-    border-bottom: 690px solid transparent;
-    border-left: 450px solid transparent;
-    transform-origin: top;
-    transition: transform 0.25s linear;
-  }
-  
-  /* Lid when closed */
-  .lid.one {
-    border-top: 500px solid #658ced;
-    transform: rotateX(0deg);
-    z-index: 3;
-    transition-delay: 0.75s;
-  }
-  /* .imgConvite{
-    margin:  0 auto;
-    position: absolute;
-    left: 20%;
-    width: 60%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  } */
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #3B4049;
+}
 
-  /* Lid when opened */
-  .lid.two {
-    border-top: 100px solid #3760C9;
-    transform: rotateX(90deg);
-    z-index: 1;
-    transition-delay: 0.5s;
-  }
-  
-  .envelope {
-    margin:  0 auto;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-top: 350px solid transparent;
-    border-right: 450px solid #C4DFF0;
-    border-bottom: 350px solid #C4DFF0;
-    border-left: 450px solid #a4d4f2;
-    z-index: 3;
-  }
-  
-  .letter .imgConvite {
-  margin:  0 auto;
-    width: 120%;
-    height: 70%;
-    background-color: white;
-    border-radius: 15px;
-    z-index: 2;
-    transition: 0.5s;
-  }
-  
+.wrapper {
+  margin-top: 5%;
+  height: 400px;
+  width: 600px;
+  background-color: #d397be;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
 
-  
-  /* .wrapper:hover .lid.one {
-      transform: rotateX(90deg);
-      transition-delay: 0.75s;
-  }
-  
-  .wrapper:hover .lid.two {
-      transform: rotateX(180deg);
-      transition-delay: 1.25s;
-  }
-  
-  .wrapper:hover .letter {
-    transform: translateY(-75%);
-    transition-delay: 2.5s;
-  } */
+.lid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 290px solid transparent;
+  border-left: 150px solid transparent;
+  transform-origin: top;
+  transition: transform 0.25s linear;
+}
+
+/* Lid when closed */
+.lid.one {
+  border-top: 250px solid #fbe9ef;
+  transform: rotateX(0deg);
+  z-index: 3;
+  transition-delay: 0.75s;
+}
+
+/* Adicione essas regras de estilo para a classe "clique-aqui" */
+.clique-aqui {
+  background-color: #e7b3c9;
+  /* Cor de fundo */
+  color: white;
+  /* Cor do texto */
+  padding: 10px 20px;
+  /* Espaçamento interno (ajuste conforme necessário) */
+  border-radius: 5px;
+  /* Borda arredondada */
+  cursor: pointer;
+  /* Ícone de cursor de clique */
+  user-select: none;
+  /* Impede a seleção de texto */
+  text-align: center;
+  /* Alinhar o texto ao centro */
+}
+
+.clique-aqui:hover {
+  /* Cor de fundo quando o mouse está sobre ele */
+  background-color: #d397be;
+  /* Cor de fundo */
+}
 
 
-  .wrapper .lid.one,
-  .wrapper .lid.two,
-  .wrapper .letter {
-      transition: transform 1s ease, transition-delay 0.5s ease;
-  }
+/* Lid when opened */
+.lid.two {
+  border-top: 100px solid #e7b3c9;
+  transform: rotateX(90deg);
+  z-index: 1;
+  transition-delay: 0.5s;
+}
+
+.envelope {
+  margin: 0 auto;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 250px solid transparent;
+  border-right: 250px solid #ffc6de;
+  border-bottom: 260px solid #e7b3c9;
+  border-left: 250px solid #ffc6de;
+  z-index: 3;
+}
+
+.letter .imgConvite {
+  margin-left: 20%;
+  width: 60%;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.wrapper .lid.one,
+.wrapper .lid.two,
+.wrapper .letter {
+  transition: transform 1s ease, transition-delay 0.5s ease;
+}
+
 /* Responsividade para dispositivos móveis gerais (max-width: 768px) */
 @media (max-width: 768px) {
-    .wrapper {
-      height: 40vh;
-      width: 90%;
-    }
-  
-    .envelope {
-      border-top: 10%;
-      border-right: 15%;
-      border-bottom: 10%;
-      border-left: 15%;
-    }
-  
-    .letter .imgConvite {
-      font-size: 4vw;
-      margin-top: 4vh;
-    }
+  .wrapper {
+    height: 40vh;
+    width: 90%;
   }
-  
-  /* Responsividade para dispositivos Android */
-  @media (max-width: 600px) {
-    .wrapper {
-      height: 30vh;
-      width: 90%;
-    }
-  
-    .envelope {
-      border-top: 8%;
-      border-right: 12%;
-      border-bottom: 8%;
-      border-left: 12%;
-    }
-  
-    .letter .imgConvite {
-      font-size: 4.5vw;
-      margin-top: 4.5vh;
-    }
+
+  .envelope,
+  .convite {
+    border-top: 10%;
+    border-right: 15%;
+    border-bottom: 10%;
+    border-left: 15%;
   }
-  
-  /* Responsividade para dispositivos iPhone */
-  @media only screen and (max-device-width: 480px) {
-    .wrapper {
-      height: 25vh;
-      width: 90%;
-    }
-  
-    .envelope {
-      border-top: 6%;
-      border-right: 10%;
-      border-bottom: 6%;
-      border-left: 10%;
-    }
-  
-    .letter .imgConvite {
-      font-size: 5vw;
-      margin-top: 5vh;
-    }
+
+  .letter .imgConvite {
+    font-size: 4vw;
+    margin-top: 4vh;
   }
-  
-  /* Outros dispositivos móveis, se necessário */
-  @media (max-width: 480px) {
-    /* Faça ajustes específicos para outros dispositivos móveis, se necessário */
+}
+
+/* Responsividade para dispositivos Android */
+@media (max-width: 600px) {
+  .wrapper {
+    height: 30vh;
+    width: 90%;
   }
-  
+
+  .envelope {
+    border-top: 8%;
+    border-right: 12%;
+    border-bottom: 8%;
+    border-left: 12%;
+  }
+
+  .letter .imgConvite {
+    font-size: 4.5vw;
+    margin-top: 4.5vh;
+  }
+}
+
+/* Responsividade para dispositivos iPhone */
+@media only screen and (max-device-width: 480px) {
+  .wrapper {
+    height: 25vh;
+    width: 90%;
+  }
+
+  .envelope {
+    border-top: 6%;
+    border-right: 10%;
+    border-bottom: 6%;
+    border-left: 10%;
+  }
+
+  .letter .imgConvite {
+    font-size: 5vw;
+    margin-top: 5vh;
+  }
+}
+
+/* Outros dispositivos móveis, se necessário */
+@media (max-width: 480px) {
+  /* Faça ajustes específicos para outros dispositivos móveis, se necessário */
+}
