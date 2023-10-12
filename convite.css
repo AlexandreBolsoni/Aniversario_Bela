@@ -108,68 +108,87 @@ body {
   transition: transform 1s ease, transition-delay 0.5s ease;
 }
 
-/* Responsividade para dispositivos móveis gerais (max-width: 768px) */
-@media (max-width: 768px) {
-  .wrapper {
-    height: 40vh;
-    width: 90%;
-  }
-
-  .envelope,
-  .convite {
-    border-top: 10%;
-    border-right: 15%;
-    border-bottom: 10%;
-    border-left: 15%;
-  }
-
-  .letter .imgConvite {
-    font-size: 4vw;
-    margin-top: 4vh;
-  }
-}
-
-/* Responsividade para dispositivos Android */
+/* Estilos para telas pequenas (por exemplo, dispositivos móveis) */
 @media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+  }
+
   .wrapper {
-    height: 30vh;
-    width: 90%;
+    margin-top: 2%;
+    height: auto;
+    width: 80%;
+  }
+
+  .lid.one,
+  .lid.two {
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid transparent;
+    border-left: 100px solid transparent;
   }
 
   .envelope {
-    border-top: 8%;
-    border-right: 12%;
-    border-bottom: 8%;
-    border-left: 12%;
-  }
-
-  .letter .imgConvite {
-    font-size: 4.5vw;
-    margin-top: 4.5vh;
+    border-right: 150px solid #ffc6de;
+    border-bottom: 150px solid #e7b3c9;
+    border-left: 150px solid #ffc6de;
   }
 }
 
-/* Responsividade para dispositivos iPhone */
-@media only screen and (max-device-width: 480px) {
+/* Estilos para telas médias (por exemplo, tablets) */
+@media (max-width: 1024px) {
+  body {
+    align-items: center;
+  }
+}
+
+/* Estilos para telas maiores (por exemplo, desktops) */
+@media (min-width: 1025px) {
   .wrapper {
-    height: 25vh;
-    width: 90%;
+    margin-top: 5%;
+    height: 400px;
+    width: 600px;
+  }
+
+  .lid.one,
+  .lid.two {
+    border-right: 150px solid transparent;
+    border-bottom: 290px solid transparent;
+    border-left: 150px solid transparent;
   }
 
   .envelope {
-    border-top: 6%;
-    border-right: 10%;
-    border-bottom: 6%;
-    border-left: 10%;
-  }
-
-  .letter .imgConvite {
-    font-size: 5vw;
-    margin-top: 5vh;
+    border-right: 250px solid #ffc6de;
+    border-bottom: 260px solid #e7b3c9;
+    border-left: 250px solid #ffc6de;
   }
 }
 
-/* Outros dispositivos móveis, se necessário */
-@media (max-width: 480px) {
-  /* Faça ajustes específicos para outros dispositivos móveis, se necessário */
+/* Estilos comuns para todas as telas */
+/* Coloque as regras de estilo comuns aqui */
+.clique-aqui {
+  background-color: #e7b3c9;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+}
+
+.clique-aqui:hover {
+  background-color: #d397be;
+}
+
+.lid.one {
+  transition-delay: 0.75s;
+}
+
+.lid.two {
+  transition-delay: 0.5s;
+}
+
+.wrapper .lid.one,
+.wrapper .lid.two,
+.wrapper .letter {
+  transition: transform 1s ease, transition-delay 0.5s ease;
 }
