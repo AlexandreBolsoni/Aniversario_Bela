@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -86,7 +88,7 @@
   
 
   
-  .wrapper:hover .lid.one {
+  /* .wrapper:hover .lid.one {
       transform: rotateX(90deg);
       transition-delay: 0.75s;
   }
@@ -99,6 +101,13 @@
   .wrapper:hover .letter {
     transform: translateY(-75%);
     transition-delay: 2.5s;
+  } */
+
+
+  .wrapper .lid.one,
+  .wrapper .lid.two,
+  .wrapper .letter {
+      transition: transform 1s ease, transition-delay 0.5s ease;
   }
 /* Responsividade para dispositivos móveis gerais (max-width: 768px) */
 @media (max-width: 768px) {
